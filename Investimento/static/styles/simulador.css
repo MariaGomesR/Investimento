@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DynaPuff:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DynaPuff:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DynaPuff:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap');
+
+:root{
+    --cor-base: #c7dbc3;
+    --fonte-prata:'Prata' , 'sans-serif';
+    --fonte-josefin: 'Josefin Sans' , 'sans-serif';
+    --fonte-lato: 'Lato' , 'sans-serif';
+    --color-texto: #819d7b
+}
+
+
+body{
+    background-image:url('/static/assets/fundo.png');
+    background-size: cover; /*redimencionar a imagem de fundo e cobrir todo o espaço de tela*/
+    position: fixed;
+  
+}
+
+
+/* Estilo geral do menu */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center
+}
+  
+li  {
+   position: relative; /* Necessário para alinhar a sublista */
+}
+
+li a{
+    font-family: var(--fonte-josefin);
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 10;
+}
+
+.sobre{
+    position: relative;
+    left:240%;
+    top: 30px;
+}
+.simular{
+    position: relative;
+    top: 30px;
+    left: 100%;
+}
+
+.investir{
+    position: relative;
+    top: 30px;
+    left: 70%; 
+}
+
+.investimentos{
+    position: relative;
+    top: 30px;
+    left: 85%; 
+}
+
+.inicio{
+    position: relative;
+    left:240%;
+    top: 30px;
+}
+
+
+.geral h1{
+    font-family: var(--fonte-prata);
+    color: var(--color-texto);
+    font-weight: 10;
+    margin-top: 50px;
+    left: 2%;
+    position: relative;
+}
+
+.geral{
+    position: fixed;
+    left: 48%;
+    font-size: 25px;
+    font-family: var(--fonte-josefin);
+    top: 150px;
+    
+}
+ 
+input{
+    background-color: white;
+    border-radius: 30px;
+    border: solid white;
+    size: 60px;
+}
+
+.dinheiro{
+    position: fixed;
+    top: 230px;
+    left: 16%;
+}
+
+button{
+    position: fixed;
+    padding: 10px 35px;
+    background-color: white;
+    border: solid var(--color-texto);
+    border-radius: 30px;
+    bottom: 160px;
+    left: 60%;
+    font-family: var(--fonte-lato);
+    font-size: 15px;
+}
+
+select {
+    background-color: white;
+    border-radius: 30px;
+    border: solid white;
+    size: 60px;
+}

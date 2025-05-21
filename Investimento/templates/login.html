@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/styles/login.css">
+</head>
+<nav>
+    <ul>
+        <li>
+            <a class="inicio" href="/">Início</a>
+        </li>
+        
+        <li>
+            <a class="sobre" href="/seguranca">Sobre Nós</a>
+        </li>
+      
+        <!-- Outros itens do menu -->
+        <li class="investir">
+          <a href="/comoinvestir">Como Investir</a>
+        </li>
+        <li class="investimentos">
+          <a href="/investimentos">Investimentos</a>
+        </li>
+
+        <li class="simular">
+            <a href="/simulador">Simular</a>
+        </li>
+
+    </ul>
+</nav>
+<body>
+<div class="geral">
+    <div class="bloco1">
+        <img class="logo"img src="/static/assets/logo grsande2.png" alt="logo"  width="450px">
+        <p>Investir com confiança, crescer com segurança!</p>
+    </div>
+    <div class="bloco2" >
+        <h1>LOGIN</h1>
+        <form action="/login" method="POST">
+
+            <div class="login">
+            <label for="usuario"></label>
+            <input type="text" name="usuario" id="usuario" placeholder="Usuário" required>
+            <br>
+            </div>
+            <label for="senha"></label>
+            <input type="password" name="senha" id="senha" placeholder="Senha" required>
+            <br>
+            <br>
+            <div class="botao">
+                <button type="submit">Entrar</button>
+            </div>
+            <div class="link">
+                <a href="/cadastro">Não tem uma conta? Se cadastre</a>
+            </div>
+        </form>
+
+    </div>
+</div>
+    
+</body>
+</html>

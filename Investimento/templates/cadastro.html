@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="static/styles/cadastro.css">
+</head>
+<nav>
+    <ul>
+        <li>
+            <a class="inicio" href="/">Início</a>
+        </li>
+        
+        <li>
+            <a class="sobre" href="/seguranca">Sobre Nós</a>
+        </li>
+      
+        <!-- Outros itens do menu -->
+        <li class="investir">
+          <a href="/comoinvestir">Como Investir</a>
+        </li>
+        <li class="investimentos">
+          <a href="/investimentos">Investimentos</a>
+        </li>
+
+        <li class="simular">
+            <a href="/simulador">Simular</a>
+        </li>
+
+    </ul>
+</nav>
+<body>
+<div class="geral">
+    <div class="bloco1">
+        <img class="logo" src="/static/assets/logo grsande2.png" alt="logo" width="450px">
+        <p>Investir com confiança, crescer com segurança!</p>
+    </div>
+
+    <div class="bloco2">
+        <h1>CADASTRE-SE</h1> 
+        <form action="/cadastro" method= "POST">
+
+            <div class="nome">
+            <label for="nome"></label>
+            <input type="text" name="nome_usuario" id="nome_usuario" placeholder="Nome completo" required>
+            <br>
+            </div>
+            <label for="usuario"></label>
+            <input type="text" name="usuario" id="usuario" placeholder="Usuário" required>
+            <br>
+
+             <div class="senha">
+            <label for="senha"></label>
+            <input type="password" name="senha" id="senha" placeholder="Senha" required>
+            <br>
+        </div>
+            <br>
+            
+                <button type="submit">Cadastrar</button>
+           
+        </form>
+
+
+    <div class="link">
+        <a href="/login">Já tem uma conta? Faça Login</a>
+    </div>
+</div>
+</body>
+</html>

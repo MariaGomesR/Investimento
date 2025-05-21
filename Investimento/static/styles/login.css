@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DynaPuff:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DynaPuff:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DynaPuff:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap');
+
+:root{
+    --cor-base: #c7dbc3;
+    --fonte-prata:'Prata' , 'sans-serif';
+    --fonte-josefin: 'Josefin Sans' , 'sans-serif';
+    --fonte-lato: 'Lato' , 'sans-serif';
+}
+
+body{
+    background-image:url('/static/assets/fundo.png');
+    background-size: cover; /*redimencionar a imagem de fundo e cobrir todo o espaço de tela*/
+    position: fixed;
+  
+}
+
+
+/* Estilo geral do menu */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center
+}
+  
+li  {
+   position: relative; /* Necessário para alinhar a sublista */
+}
+
+li a{
+    font-family: var(--fonte-josefin);
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 10;
+}
+
+.inicio{
+    position: relative;
+    left: 370%;
+    top: 25px;
+}
+
+.sobre{
+    position: relative;
+    left:240%;
+    top: 30px;
+}
+.simular{
+    position: relative;
+    top: 30px;
+    left: 100%;
+}
+
+.investir{
+    position: relative;
+    top: 30px;
+    left: 70%; 
+}
+
+.investimentos{
+    position: relative;
+    top: 30px;
+    left: 85%; 
+}
+  
+.menu-button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    text-align: left;
+    font-family: var(--fonte-josefin);
+    font-weight: 10;
+    right: 180px;
+    position: relative;
+    top: 20px;
+}
+
+.bloco2 input{
+    margin-bottom: 1px;
+    position: fixed;
+    color: white;
+    padding: 10px 10px;
+    border: solid white;
+    border-radius: 30px;
+    left: 53%;
+    width: 400px;
+}
+
+
+.bloco2{
+    padding: 250px 600px;
+    background-color: rgba(255, 255, 255, 0.23);
+    border-radius: 53px;
+    position: fixed;
+    left: 10%;
+    top:90px;
+}
+
+.bloco2 h1{
+    position: fixed;
+    font-family: var(--fonte-lato);
+    font-style: italic;
+    right: 30%;
+    top: 200px;
+    gap: 10px;
+}
+
+.logo{
+    position: relative;
+    left: 30%;
+    z-index: 1;
+    top: 120px;
+}
+ .bloco1 p{
+    position: fixed;
+    font-family: var(--fonte-josefin);
+    font-size: 25px;
+    bottom: 100px;
+    left: 190px;
+    color: #2f4842;
+ }
+
+ button{
+    position: fixed;
+    padding: 10px 35px;
+    background-color: white;
+    border: solid #94d961;
+    border-radius: 30px;
+    bottom: 150px;
+    left: 63%;
+    font-family: var(--fonte-lato);
+    font-size: 15px;
+ }
+
+.bloco2 button :hover{
+    color: #94d961;
+ }
+ 
+ .link a{
+    font-family: var(--fonte-lato);
+    color: black;
+    position: fixed;
+    left: 60%;
+    bottom: 220px;
+ }
+
+ .login{
+    position: fixed;
+    top: 270px;
+ }
