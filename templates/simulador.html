@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simulador</title>
+    <link rel="stylesheet" href="/static/styles/simulador.css">
+</head>
+<nav>
+    <ul>
+        <li>
+            <a class="inicio" href="/">Início</a>
+        </li>
+        <li>
+          <a class="sobre" href="/seguranca">Sobre Nós</a>
+        </li>
+      
+        <!-- Outros itens do menu -->
+        <li class="investir">
+          <a href="/comoinvestir">Como Investir</a>
+        </li>
+        <li class="investimentos">
+          <a href="/investimentos">Investimentos</a>
+        </li>
+
+        <li class="simular">
+            <a href="/simulador">Simular</a>
+        </li>
+
+    </ul>
+</nav>
+<body>
+
+    <div class="dinheiro">
+        <img src="/static/assets/dinheiro 1.png" alt="dinheiro" width="350px">
+    </div>
+    <div class="geral">
+        <h1>Simule o seu investimento</h1>
+        <form action="/simulador" method="post">
+            <label for="tipo_investimento">Tipo de Investimento:</label>
+            <select id="tipo_investimento" name="tipo_investimento" required>
+                <option value="">Selecione</option>
+                <option value="cdb" {% if tipo_investimento == 'cdb' %}selected{% endif %}>CDB</option>
+                <option value="tesouro_direto" {% if tipo_investimento == 'tesouro_direto' %}selected{% endif %}>Tesouro Direto</option>
+                <option value="acoes" {% if tipo_investimento == 'acoes' %}selected{% endif %}>Ações</option>
+            </select><br>
+    
+            <label for="taxa_juros">Taxa de Juros (% ao mês):</label>
+            <input type="text" name="taxa_juros" id="taxa_juros" value="{{ taxa_juros or '' }}" readonly><br>
+    
+            <label for="valor_inicial">Valor Inicial:</label>
+            <input type="number" name="valor_inicial" id="valor_inicial" value="{{ valor_inicial or '' }}" required><br>
+    
+            <label for="periodo">Período (meses):</label>
+            <input type="number" name="periodo" id="periodo" value="{{ periodo or '' }}" required><br>
+    
+            <button type="submit">Simular</button>
+        </form>
+    
+        {% if resultado %}
+            <h2>{{ resultado }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
