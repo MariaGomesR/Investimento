@@ -9,7 +9,7 @@ Foi desenvolvido em duplas e criamos a MaverickInvestments uma empresa que reali
 
 ## DEMONSTRAÇÃO:
 ![print sejabemvindo](/static/assets/telaa.png)
-![print seguranca](/static/assets/segurança.png)
+![print seguranca](/static/assets/seguranca.png)
 ![print simular](/static/assets/simular.png)
 
 
