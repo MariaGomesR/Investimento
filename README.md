@@ -15,7 +15,7 @@ Foi desenvolvido em duplas e criamos a MaverickInvestments uma empresa que reali
 
 
 Participação
-> [Isabelly Dias](https://investimento-2.onrender.com)  
+> [Isabelly Dias](https://IDbaptista.com)  
 
 🔗Links
-[MI investimentos]
+[MI investimentos](https://investimento-2.onrender.com)
